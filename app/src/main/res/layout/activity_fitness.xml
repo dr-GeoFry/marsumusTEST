@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt; BACK"
+        android:id="@+id/textViewBACK"
+        android:textColor="#001"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/horizontalScrollViewFITNESS"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent">
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/worker"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView6"
+                android:src="@drawable/worker"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView7"
+                android:src="@drawable/worker"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView8"
+                android:src="@drawable/worker"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView9"
+                android:src="@drawable/worker"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

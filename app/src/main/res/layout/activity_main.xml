@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/topBannerLayout">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/horizontalScrollView" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutScroller"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:paddingTop="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView1"
+                android:src="@drawable/worker"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/browncaddy"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/worker"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/greencaddy"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_height="100dp"
+                android:id="@+id/imageView5"
+                android:src="@drawable/worker"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:clickable="true" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Featured OTF Professionals"
+        android:id="@+id/otfheader"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BARTENDERS"
+        android:id="@+id/buttonBARTENDERS"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:elegantTextHeight="true"
+        android:focusableInTouchMode="false"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FITNESS"
+        android:id="@+id/buttonFITNESS"
+        android:layout_above="@+id/buttonBARTENDERS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        android:layout_gravity="center_vertical"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:elegantTextHeight="true"
+        android:focusableInTouchMode="false"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAIR &amp; MAKEUP"
+        android:id="@+id/buttonHAIR"
+        android:layout_gravity="center_vertical"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:elegantTextHeight="true"
+        android:focusableInTouchMode="false"
+        android:textAlignment="center"
+        android:layout_below="@+id/buttonComputers"
+        android:layout_toRightOf="@+id/otfheader"
+        android:layout_toEndOf="@+id/otfheader" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONCIERGE"
+        android:id="@+id/buttonCONCIERGE"
+        android:layout_toRightOf="@+id/buttonFITNESS"
+        android:layout_above="@+id/buttonBARTENDERS"
+        android:layout_gravity="center_vertical"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:elegantTextHeight="true"
+        android:focusableInTouchMode="false"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPUTERS"
+        android:layout_weight="1"
+        android:id="@+id/buttonComputers"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/buttonBARTENDERS"
+        android:layout_toRightOf="@+id/buttonCONCIERGE"
+        android:layout_toEndOf="@+id/buttonCONCIERGE"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:elegantTextHeight="true"
+        android:focusableInTouchMode="false"
+        android:textAlignment="center"
+        android:paddingRight="2dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COOKS"
+        android:id="@+id/buttonCOOKS"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/buttonComputers"
+        android:layout_toStartOf="@+id/buttonComputers"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:elegantTextHeight="true"
+        android:focusableInTouchMode="false"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME &amp; GARDEN"
+        android:id="@+id/buttonHG"
+        android:layout_above="@+id/buttonHAIR"
+        android:layout_toRightOf="@+id/otfheader"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:layout_alignParentEnd="true"
+        android:focusableInTouchMode="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUSIC"
+        android:id="@+id/buttonMusic"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:layout_below="@+id/buttonComputers"
+        android:layout_alignLeft="@+id/buttonComputers"
+        android:layout_alignStart="@+id/buttonComputers"
+        android:focusableInTouchMode="false"
+        android:paddingRight="2dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="SETTINGS"
+        android:id="@+id/buttonSettings"
+        android:textSize="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_toStartOf="@+id/otfheader"
+        android:layout_alignBottom="@+id/buttonChat"
+        android:layout_toLeftOf="@+id/otfheader" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Chat"
+        android:id="@+id/buttonChat"
+        android:textSize="10sp"
+        android:layout_below="@+id/otfheader"
+        android:layout_alignRight="@+id/buttonHG"
+        android:layout_alignEnd="@+id/buttonHG" />
+
+</RelativeLayout>

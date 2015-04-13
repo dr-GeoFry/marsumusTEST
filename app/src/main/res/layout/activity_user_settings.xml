@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONE"
+        android:id="@+id/textViewDone"
+        android:textColor="#001"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="10dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageViewUser"
+        android:background="@drawable/worker"
+        android:paddingTop="45dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/LinearLayoutTEXTFIELDS"
+        android:paddingTop="15dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FIRST NAME" android:id="@+id/textFIRSTNAME"></TextView>
+
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/editFIRSTNAME"></EditText>
+
+        <TextView android:id="@+id/textLASTNAME" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LAST NAME"></TextView>
+
+        <EditText android:id="@+id/editLASTName" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textEmail" android:text="email address:"></TextView>
+
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/editEmail"></EditText>
+    </LinearLayout>
+</LinearLayout>
