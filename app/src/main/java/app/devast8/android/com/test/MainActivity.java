@@ -19,6 +19,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // MRB I feel like I should remember what "R" is...
         setContentView(R.layout.activity_main);
 
         buttonSettings = (Button) findViewById(R.id.buttonSettings);
