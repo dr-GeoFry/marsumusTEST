@@ -3,12 +3,8 @@ package app.devast8.android.com.test;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class chatActivity extends Activity implements OnClickListener {
@@ -19,12 +15,12 @@ public class chatActivity extends Activity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fitness);
+        setContentView(R.layout.activity_chat);
 
         //imageButtonBack = (ImageButton) findViewById(R.id.imageButtonBack);
         textViewBACK = (TextView) findViewById(R.id.textViewBACK);
 
-        textViewBACK.setOnClickListener(this);
+//        textViewBACK.setOnClickListener(this);
     }
 
     public void onClick(View src) {
